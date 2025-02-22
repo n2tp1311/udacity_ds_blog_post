@@ -1,44 +1,80 @@
-# README
+Iris Dataset Exploration using CRISP-DM
 
-## Churn Detection Model Based on Credit Information
+Overview
 
-### Overview
+This project explores the famous Iris dataset using the CRISP-DM methodology, covering data understanding, preparation,
+modeling, and evaluation. The goal is to classify iris species based on sepal and petal measurements.
 
-This notebook contains a machine learning model to detect incoming churn customers based on their credit information.
-The goal is to identify customers who are likely to stop making payments and take appropriate actions to mitigate
-financial risk.
+CRISP-DM Process
 
-### Contents
+1. Business Understanding
 
-- **Data Loading & Preprocessing:** Handling missing values, feature engineering, and exploratory data analysis.
-- **EDA (Exploratory Data Analysis):** Visualizing distributions and correlations using `matplotlib` and `seaborn`.
-- **Model Training:** Implementing machine learning models to predict churn.
-- **Evaluation:** Measuring model performance using appropriate metrics.
+The objective is to classify iris flowers into one of three species: Setosa, Versicolor, and Virginica.
 
-### Dependencies
+Understanding which features contribute most to classification.
 
-The notebook requires the following Python libraries:
+Selecting an appropriate model that balances accuracy and interpretability.
 
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `sklearn`
+2. Data Understanding
 
-Ensure you have these installed before running the notebook.
+Dataset contains 150 samples, each with 4 numerical features:
 
-### Usage
+Sepal length
 
-1. Load the dataset into the notebook.
-2. Run the preprocessing and EDA sections to understand the data.
-3. Train the model and evaluate its performance.
-4. Use the trained model to make predictions on new data.
+Sepal width
 
-### Notes
+Petal length
 
-- The model assumes clean and structured credit data.
-- Further hyperparameter tuning may be required for optimal performance.
-- Interpretability techniques such as SHAP or feature importance can be added for better insights.
+Petal width
 
-#
+Target variable: species (3 classes).
 
+Exploratory analysis includes feature distribution, correlation, and visualization (scatter plots, histograms, and pair
+plots).
+
+3. Data Preparation
+
+Checking for missing values, duplicates, and outliers.
+
+Feature scaling applied where necessary (especially for models like Logistic Regression and k-NN).
+
+Splitting the dataset into training (80%) and testing (20%).
+
+4. Modeling
+
+Various classification models tested:
+
+Dummy Classifier (Baseline model)
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+Cross-validation performed to evaluate model performance.
+
+5. Evaluation
+
+Metrics used for model assessment:
+
+Accuracy
+
+Precision (macro)
+
+Recall (macro)
+
+F1-score (macro)
+
+ROC-AUC (OvR for multi-class)
+
+Model comparison and selection based on performance.
+
+6. Deployment
+
+The best-performing model is Logistic Regression, which showed the highest accuracy and balanced performance across
+precision, recall, and F1-score.
+
+The model can be exported and integrated into applications for automated classification.
+
+Future improvements include hyperparameter tuning and additional feature engineering.
