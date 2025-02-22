@@ -1,5 +1,7 @@
 Iris Dataset Exploration using CRISP-DM
 
+Link to blog post: https://medium.com/@n2tp1311/exploring-the-iris-dataset-with-crisp-dm-b30f7d236eaf
+
 Overview
 
 This project explores the famous Iris dataset using the CRISP-DM methodology, covering data understanding, preparation,
