@@ -55,7 +55,7 @@ Feature scaling applied where necessary (especially for models like Logistic Reg
 
 Splitting the dataset into training (80%) and testing (20%).
 
-## Modeling
+## 4. Modeling
 
 Various classification models tested:
 
