@@ -9,16 +9,22 @@ modeling, and evaluation. The goal is to classify iris species based on sepal an
 
 # Key questions
 
-1. **Which features play a key role in distinguishing species?**: Sepal length, petal length, and petal width are the
+1. **Which measures play a key role in distinguishing species?**: Sepal length, petal length, and petal width are the
    most useful features for classifying all three species.
 
-2. **How do you recognize species based on their measurements?**: Setosa is clearly separated from the other species due
-   to its small petal size, while Versicolor and Virginica show partial overlap, making it difficult to separate them
-   with a simple decision boundary.
+2. **Which measures are important in differentiating Setosa from other 2 species?**: Setosa is clearly separated from
+   the other species due to its small petal size.
 
-3. **What are practical application of this model?**: The knowledge from this dataset can be applied to automated plant
+3. **Which meaasures are important in differentiating Virginica from other 2 species**: Virginica has significant larger
+   and longer petal compared to Setosa. Compared to Versicolor, Virginica has slightly larger and longer. Using petal
+   length and width, Setosa << Versicolor < Virginica
+
+4. **What are practical application of this model?**: The knowledge from this dataset can be applied to automated plant
    classification, agriculture research, and inventory management in nurseries, while also serving as an excellent
    educational tool for understanding machine learning classification techniques.
+
+5. **How well does new model improve the accuracy of our prediction?**: Thew new model increase accuracy from 36% to
+   95%, compared to random prediction (based on referenced distribution)
 
 # CRISP-DM Process
 
